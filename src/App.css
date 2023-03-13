@@ -180,11 +180,13 @@ select {
   --cor-hover-1: #892990;
   --cor-hover-2: #ed217a;
 
+  --cor-borda-input: #0a0738;
+
   --cor-btn: #892990;
   --cor-fonte-btn-hover: #6dbffa;
 
-  --cor-card-centro: #fa7f36;
-  --cor-sombra-card-centro-1: #ed217a;
+  --cor-card-form: #fa7f36;
+  --cor-sombra-card-form: #ed217a;
 
   --cor-card-1: #6dbffa;
   --cor-card-2: #54f334;
@@ -201,15 +203,11 @@ html {
   padding: 0.5em;
 }
 
-.card__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.main__container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  background-color: var(--cor-card-centro);
-  border-radius: 15px;
-  box-shadow: -6px 6px var(--cor-sombra-card-centro-1);
 }
 
 .titulo {
@@ -268,4 +266,10 @@ html {
 
 .btn__geral:active {
   transform: scale(0.9);
+}
+
+.input__geral {
+  border-radius: 15px;
+  border: 4px solid var(--cor-borda-input);
+  margin: 1em;
 }
