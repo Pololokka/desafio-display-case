@@ -14,7 +14,19 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(product, img, price, priceDis);
+
+    const newProduct = {
+      id: Math.random(),
+      product,
+      img,
+      price,
+      priceDis,
+    };
+
+    items.push(newProduct);
+
+    console.log(items);
+
     setProduct("");
     setImg("");
     setPrice(0);
@@ -27,38 +39,42 @@ const Form = () => {
         <h2 className="subtitulo sombra-subtitulo-hover">
           Cadastro de Produtos
         </h2>
-        <Input
-          title="Nome"
-          type="text"
-          name="name"
-          value={product}
-          setState={setProduct}
-          className="input__geral"
-        />
-        <Input
-          title="Link da Imagem"
-          type="text"
-          name="img"
-          value={img}
-          setState={setImg}
-          className="input__geral"
-        />
-        <Input
-          title="Preço"
-          type="number"
-          name="price"
-          value={price}
-          setState={setPrice}
-          className="input__price"
-        />
-        <Input
-          title="Preço com Desconto(opcional)"
-          type="number"
-          name="price-discount"
-          value={priceDis}
-          setState={setPriceDis}
-          className="input__price"
-        />
+        <div>
+          <Input
+            title="Nome"
+            type="text"
+            name="name"
+            value={product}
+            setState={setProduct}
+            className="input__geral"
+          />
+          <Input
+            title="Link da Imagem"
+            type="text"
+            name="img"
+            value={img}
+            setState={setImg}
+            className="input__geral"
+          />
+        </div>
+        <div>
+          <Input
+            title="Preço"
+            type="number"
+            name="price"
+            value={price}
+            setState={setPrice}
+            className="input__price"
+          />
+          <Input
+            title="Preço com Desconto(opcional)"
+            type="number"
+            name="price-discount"
+            value={priceDis}
+            setState={setPriceDis}
+            className="input__price"
+          />
+        </div>
 
         <input
           type="submit"

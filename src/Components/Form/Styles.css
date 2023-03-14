@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   box-shadow: -6px 6px var(--cor-sombra-card-form);
 }
 
@@ -13,7 +14,7 @@
   border-radius: 15px;
   border: 4px solid var(--cor-borda);
   margin: 1em;
-  width: 30%;
+  width: 10%;
 }
 
 /*deixa a imagem sempre quadrada e do mesmo tamanho*/
