@@ -2,6 +2,7 @@ import "./Styles.css";
 
 import { items } from "../../Data/db";
 import Input from "../Input/Index";
+import List from "../List/Index";
 
 import { useState } from "react";
 
@@ -65,6 +66,8 @@ const Form = () => {
           className="btn__geral texto"
         />
       </form>
+
+      <List />
     </div>
   );
 };

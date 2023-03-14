@@ -180,7 +180,7 @@ select {
   --cor-hover-1: #892990;
   --cor-hover-2: #ed217a;
 
-  --cor-borda-input: #0a0738;
+  --cor-borda: #0a0738;
 
   --cor-btn: #892990;
   --cor-fonte-btn-hover: #6dbffa;
@@ -188,9 +188,9 @@ select {
   --cor-card-form: #fa7f36;
   --cor-sombra-card-form: #ed217a;
 
-  --cor-card-1: #6dbffa;
-  --cor-card-2: #54f334;
-  --cor-card-3: #fbe435;
+  --cor-sombra-card-produto: #54f334;
+  --cor-card-produto-dis: #6dbffa;
+  --cor-card-produto: #fbe435;
 
   --tamanho-fonte-titulo: 3rem;
   --tamanho-fonte-subtitulo: 3rem;
@@ -243,6 +243,10 @@ html {
   transition: 200ms;
   padding: 0.5em;
   display: inline-block;
+}
+
+.text-discount {
+  text-decoration: line-through;
 }
 
 .sombra-texto-hover:hover {

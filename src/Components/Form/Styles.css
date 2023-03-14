@@ -6,13 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-auto-flow: row;
   box-shadow: -6px 6px var(--cor-sombra-card-form);
 }
 
 .input__price {
   border-radius: 15px;
-  border: 4px solid var(--cor-borda-input);
+  border: 4px solid var(--cor-borda);
   margin: 1em;
   width: 30%;
 }

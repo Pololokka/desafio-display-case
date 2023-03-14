@@ -1,7 +1,7 @@
 const Input = ({ title, type, name, value, setState, className }) => {
   return (
     <>
-      <label htmlFor="product-name" className="texto sombra-texto-hover">
+      <label htmlFor={`product-${name}`} className="texto sombra-texto-hover">
         {title}
       </label>
       <input
