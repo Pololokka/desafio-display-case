@@ -2,7 +2,7 @@
 
 # Display Case
 
-Display Case
+Desafio de criar uma página onde vários produtos podem ser exibidos
 
 ## Tecnologias
 
