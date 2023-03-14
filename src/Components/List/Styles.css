@@ -3,13 +3,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  grid-auto-rows: 1fr;
   gap: 1em;
-  padding: 1em;
+  padding: 2em;
   margin: 1em;
   background-color: var(--cor-card-form);
   border-radius: 15px;
   box-shadow: -6px 6px var(--cor-sombra-card-form);
+}
+
+.products__container {
+  height: 100%;
 }
 
 .card__container {

@@ -17,8 +17,8 @@ const Form = () => {
     console.log(product, img, price, priceDis);
     setProduct("");
     setImg("");
-    setPrice("");
-    setPriceDis("");
+    setPrice(0);
+    setPriceDis(0);
   };
 
   return (
@@ -66,6 +66,10 @@ const Form = () => {
           className="btn__geral texto"
         />
       </form>
+
+      <h2 className="subtitulo sombra-subtitulo-hover">
+        Confira Nossos Produtos!
+      </h2>
 
       <List />
     </div>
